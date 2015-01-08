@@ -5,7 +5,7 @@ all:$(OBJ)
 .PHONY:all clean  
 
 %.out: %.c
-	gcc $< ../apue.c -I ../ -o $@
+	gcc $< ../common/apue.c -I ../common -o $@
 
 clean:
 	rm -rf *.out
