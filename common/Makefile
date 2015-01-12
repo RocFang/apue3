@@ -5,7 +5,7 @@ all:$(OBJ)
 .PHONY:all clean  
 
 %.out: %.c
-	gcc $< ../common/apue.c -I ../common -lpthread -o $@
+	gcc $< ../common/apue.c -I ../common -lpthread -lrt -o $@
 
 clean:
 	rm -rf *.out
